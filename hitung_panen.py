@@ -23,3 +23,25 @@ def hitung_total_dan_diskon(berat, harga):
         
     total_bayar = subtotal - diskon
     return subtotal, diskon, total_bayar
+
+# ==========================================
+# MODUL 3: CETAK LAPORAN PANEN (Anggota 3)
+# ==========================================
+def cetak_laporan_panen(nama, berat, subtotal, diskon, total_bayar):
+    print("\n" + "="*40)
+    print("        STRUK LAPORAN HASIL PANEN       ")
+    print("="*40)
+    print(f"Nama Petani   : {nama}")
+    print(f"Total Panen   : {berat} kg")
+    print(f"Subtotal      : Rp {subtotal:,.0f}")
+    print(f"Diskon        : Rp {diskon:,.0f}")
+    print("-" * 40)
+    print(f"TOTAL DITERIMA: Rp {total_bayar:,.0f}")
+    print("="*40)
+
+# ------------------------------------------
+# JALANKAN PROGRAM UTAMA
+# ------------------------------------------
+petani, berat, harga = input_data_panen()
+subtotal, diskon, total = hitung_total_dan_diskon(berat, harga)
+cetak_laporan_panen(petani, berat, subtotal, diskon, total)
