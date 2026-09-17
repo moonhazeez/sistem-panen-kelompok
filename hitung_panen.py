@@ -45,3 +45,5 @@ def cetak_laporan_panen(nama, berat, subtotal, diskon, total_bayar):
 petani, berat, harga = input_data_panen()
 subtotal, diskon, total = hitung_total_dan_diskon(berat, harga)
 cetak_laporan_panen(petani, berat, subtotal, diskon, total)
+
+# AKHIR LAPORAN
