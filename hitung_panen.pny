@@ -1,0 +1,10 @@
+# ==========================================
+# MODUL 1: INPUT DATA PANEN (Anggota 1)
+# ==========================================
+def input_data_panen():
+    nama_petani = input("Masukkan Nama Petani: ")
+    berat_panen = float(input("Masukkan Total Hasil Panen (kg): "))
+    harga_per_kg = float(input("Masukkan Harga per kg: Rp "))
+    return nama_petani, berat_panen, harga_per_kg
+
+print("=== SISTEM PENCATATAN HASIL PANEN DIGITAL ===")
